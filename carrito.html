@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <header>
+                <h1 class="logo">BMYM vapes</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="btn-gen btn-volver" href="index.html">
+                            <i class="bi bi-arrow-return-left"></i>Seguir comprando
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn-gen btn-carrito activo" href="carrito.html">
+                            <i class="bi bi-bag-fill"></i>Carrito <span class="num">0</span>
+                        </a>
+                    </li> 
+                </ul>
+            </nav>
+            <footer>
+                <p class="txt-footer">© 2023 BMYM vapes</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal">Carrito de compras</h2>
+            <div class="container-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacío. <i class="bi bi-heartbreak-fill"></i></p>
+                <div id="productos-carrito" class="productos-carrito deshabilitado">
+                </div>
+                <div id="acciones-carrito" class="acciones-carrito deshabilitado">
+                    <div class="izq-acciones-carrito">
+                        <button id="vaciar-acciones-carrito" class="vaciar-acciones-carrito">Limpiar carrito</button>
+                    </div>
+                    <div class="der-acciones-carrito">
+                        <div class="total-acciones-carrito">
+                            <p>Total:</p>
+                            <p id="total">$14000</p>
+                        </div>
+                        <button id="pagar-acciones-carrito" class="pagar-acciones-carrito">COMPRAR</button>
+                    </div>
+                </div>
+
+                <p id="carrito-comprado" class="carrito-comprado deshabilitado">Muchas gracias por tu compra!<i class="bi bi-emoji-kiss"></i></p>
+
+            </div>
+        </main>
+    </div>
+
+
+    <script src="js/carrito.js"></script>
+</body>
+</html>
