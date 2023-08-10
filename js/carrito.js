@@ -3,7 +3,6 @@ const productosCarrito = JSON.parse(localStorage.getItem("productosCarrito"))
 const carritoVacio = document.getElementById("carrito-vacio")
 const carritoProductos = document.getElementById("productos-carrito")
 const accionesCarrito = document.getElementById("acciones-carrito")
-const carritoComprado = document.getElementById("carrito-comprado")
 let btnEliminar = document.querySelectorAll(".eliminar-producto-carrito")
 const btnVaciar = document.getElementById("vaciar-acciones-carrito")
 const total = document.getElementById("total")
@@ -15,7 +14,6 @@ function CargarCarrito(){
         carritoVacio.classList.add("deshabilitado")
         carritoProductos.classList.remove("deshabilitado")
         accionesCarrito.classList.remove("deshabilitado")
-        carritoComprado.classList.add("deshabilitado")
 
         carritoProductos.innerHTML = ""
         productosCarrito.forEach(producto =>{
@@ -47,7 +45,6 @@ function CargarCarrito(){
         carritoVacio.classList.remove("deshabilitado")
         carritoProductos.classList.add("deshabilitado")
         accionesCarrito.classList.add("deshabilitado")
-        carritoComprado.classList.add("deshabilitado")
     }
     actualizarBtnsEliminar()
     actualizarTotal()
@@ -99,8 +96,7 @@ function comprarCarrito(){
         iconColor: "white"
         })
         
-    carritoVacio.classList.add("deshabilitado")
+    carritoVacio.classList.remove("deshabilitado")
     carritoProductos.classList.add("deshabilitado")
     accionesCarrito.classList.add("deshabilitado")
-    carritoComprado.classList.remove("deshabilitado")
 }
