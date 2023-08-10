@@ -94,6 +94,9 @@ function comprarCarrito(){
         icon: 'success',
         title: 'Muchas gracias!',
         text: 'La compra ha sido exitosa',
+        background: "#F4CBE3",
+        color: "white",
+        iconColor: "white"
         })
         
     carritoVacio.classList.add("deshabilitado")
