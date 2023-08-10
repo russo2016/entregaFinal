@@ -90,7 +90,12 @@ function comprarCarrito(){
     productosCarrito.length = 0
     localStorage.setItem("productosCarrito",JSON.stringify(productosCarrito))
 
-
+    Swal.fire({
+        icon: 'success',
+        title: 'Muchas gracias!',
+        text: 'La compra ha sido exitosa',
+        })
+        
     carritoVacio.classList.add("deshabilitado")
     carritoProductos.classList.add("deshabilitado")
     accionesCarrito.classList.add("deshabilitado")

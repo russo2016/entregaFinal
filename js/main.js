@@ -131,8 +131,20 @@ function agregarCarrito(e){
     }else{
         productoAgregado.cantidad = 1
         carrito.push(productoAgregado)
-    }
+    }    
     actualizarNum()
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: false,
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Producto agregado correctamente'
+      })
 
     localStorage.setItem("productosCarrito",JSON.stringify(carrito))
 }
