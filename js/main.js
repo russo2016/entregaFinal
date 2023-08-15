@@ -132,20 +132,27 @@ function agregarCarrito(e){
         productoAgregado.cantidad = 1
         carrito.push(productoAgregado)
     }    
-    actualizarNum()
-    const Toast = Swal.mixin({
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: false,
-        timer: 1500,
-        timerProgressBar: false,
-      })
-      
-      Toast.fire({
-        icon: 'success',
-        title: 'Producto agregado correctamente'
-      })
+    asincronia().then(() => {
+        const newPopup = document.createElement("div");
+        newPopup.className = "popup";
+        newPopup.innerHTML = `<img class="foto" src="${productoAgregado.imagen}" alt="${productoAgregado.imagen}"></img>
+        <p>Producto agregado al carrito</p>`;
 
+        popupContainer.appendChild(newPopup);
+        newPopup.classList.add("active");
+
+        setTimeout(function () {
+            popupContainer.removeChild(popupContainer.firstChild);
+        }, 2000);
+    });
+
+    function asincronia() {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve();
+                actualizarNum()
+            }, 2000);
+        });}
     localStorage.setItem("productosCarrito",JSON.stringify(carrito))
 }
 

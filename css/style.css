@@ -265,3 +265,28 @@ main{
 #logo-ig{
     margin-right: 3px;
 }
+
+.popupContainer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.popup {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    padding: 10px 20px;
+    background-color: #F4CBE3;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.popup.active {
+    opacity: 1;
+    transform: translateY(0);
+}
