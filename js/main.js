@@ -139,7 +139,7 @@ function agregarCarrito(e){
         <p>Producto agregado al carrito</p>`;
 
         popupContainer.appendChild(newPopup);
-        newPopup.classList.add("active");
+        newPopup.classList.add("activo");
 
         setTimeout(function () {
             popupContainer.removeChild(popupContainer.firstChild);

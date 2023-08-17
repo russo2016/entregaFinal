@@ -286,7 +286,7 @@ main{
     margin-bottom: 10px;
 }
 
-.popup.active {
+.popup.activo {
     opacity: 1;
     transform: translateY(0);
 }
