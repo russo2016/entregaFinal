@@ -1,6 +1,6 @@
 let productos =[]
 
-const URL = "/entregaFinal/js/productos.json"
+const URL = "js/productos.json"
 
 fetch(URL)
     .then(response => response.json())
