@@ -1,3 +1,21 @@
+const carga = document.getElementById("carga")
+const contenido = document.getElementById("contenido")
+
+function mostrar(){
+    carga.classList.add("oculto")
+    contenido.classList.remove("oculto")
+    contenido.classList.add("visible")
+}
+
+function simulacion(segs){
+    return new Promise(resolve => setTimeout(resolve,segs))
+}
+
+window.onload = async function(){
+    await simulacion(2000)
+    mostrar()
+}
+
 let productos =[]
 
 const URL = "js/productos.json"

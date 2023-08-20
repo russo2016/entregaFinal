@@ -11,46 +11,48 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
+    <div class="mid" id="carga"><div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
     <div class="container">
-        <aside>
-            <header>
-                <div class="container-logo">
-                    <a href="index.html">
-                        <img class="foto" src="img/logo.jpeg" alt="logo">
-                    </a>
-                </div>
-            </header>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <button id="todos" class="btn-gen btn-menu activo"><i class="bi bi-suit-heart-fill"></i>Todos los productos</button>
-                    </li>
-                    <li>
-                        <button id="2500pff" class="btn-gen btn-menu"><i class="bi bi-suit-heart"></i>2500PFF</button>
-                    </li>
-                    <li>
-                        <button id="5000pff" class="btn-gen btn-menu"><i class="bi bi-suit-heart"></i></i>5000PFF</button>
-                    </li>
-                    <li>
-                        <button id="7000pff" class="btn-gen btn-menu"><i class="bi bi-suit-heart"></i></i>7000PFF</button>
-                    </li>
-                    <li>
-                        <a class="btn-gen btn-carrito" href="carrito.html">
-                            <i class="bi bi-bag-fill"></i>Carrito <span id="num" class="num">0</span>
+        <div class="oculto" id="contenido">
+            <aside>
+                <header>
+                    <div class="container-logo">
+                        <a href="index.html">
+                            <img class="foto" src="img/logo.jpeg" alt="logo">
                         </a>
-                    </li>
-                </ul>
-            </nav>
-            <div id="popupContainer" class="popupContainer"></div>
-            <footer>
-                <p class="txt-footer"><i id="logo-ig" class="bi bi-instagram"></i>bmym.vapor || © 2023 Bmym vapor</p>
-            </footer>
-        </aside>
-        <main>
-            <h2 id="titulo-principal" class="titulo-principal">Todos los productos</h2>
-            <div id="container-productos" class="container-productos">
-            </div>
-        </main>
+                    </div>
+                </header>
+                <nav>
+                    <ul class="menu">
+                        <li>
+                            <button id="todos" class="btn-gen btn-menu activo"><i class="bi bi-suit-heart-fill"></i>Todos los productos</button>
+                        </li>
+                        <li>
+                            <button id="2500pff" class="btn-gen btn-menu"><i class="bi bi-suit-heart"></i>2500PFF</button>
+                        </li>
+                        <li>
+                            <button id="5000pff" class="btn-gen btn-menu"><i class="bi bi-suit-heart"></i></i>5000PFF</button>
+                        </li>
+                        <li>
+                            <button id="7000pff" class="btn-gen btn-menu"><i class="bi bi-suit-heart"></i></i>7000PFF</button>
+                        </li>
+                        <li>
+                            <a class="btn-gen btn-carrito" href="carrito.html">
+                                <i class="bi bi-bag-fill"></i>Carrito <span id="num" class="num">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="popupContainer" class="popupContainer"></div>
+                <footer>
+                    <p class="txt-footer"><i id="logo-ig" class="bi bi-instagram"></i>bmym.vapor || © 2023 Bmym vapor</p>
+                </footer>
+            </aside>
+            <main>
+                <h2 id="titulo-principal" class="titulo-principal">Todos los productos</h2>
+                <div id="container-productos" class="container-productos"></div>
+            </main>
+        </div>
     </div>
 
 
