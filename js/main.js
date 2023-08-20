@@ -119,7 +119,7 @@ function agregarCarrito(e){
             setTimeout(() => {
                 resolve();
                 actualizarNum()
-            }, 2000);
+            }, 1000);
         });}
     localStorage.setItem("productosCarrito",JSON.stringify(carrito))
 }
